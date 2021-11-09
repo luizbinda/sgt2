@@ -1,0 +1,50 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "br.gov.sgtbatch"
+    },
+    "jhipsterVersion": "6.9.1",
+    "applicationType": "microservice",
+    "baseName": "sgtbatch",
+    "packageName": "br.gov.sgtbatch",
+    "packageFolder": "br/gov/sgtbatch",
+    "serverPort": "8082",
+    "authenticationType": "jwt",
+    "cacheProvider": "hazelcast",
+    "enableHibernateCache": false,
+    "websocket": false,
+    "databaseType": "no",
+    "devDatabaseType": "no",
+    "prodDatabaseType": "no",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "ZTNjNzU4MWM1YzNmYTE1NWNmYTg3ZGQxZmRmZTA1NzU1MGVlZTg3NTI3NDA2N2UxMmRiYmY5OTAxZWY4NmQ1YjdmZmY0ZDRmMzA3NjMyZTQxMDUyYjRjN2RiNDljNmNhZTRmMDM2M2E4ODQ2ZDAwMDFkMDA1YmQ5YTM4MzBhM2Q=",
+    "embeddableLaunchScript": false,
+    "userDetailsResource": false,
+    "microserviceStackType": "SpringCloud",
+    "creationTimestamp": 1636420365315,
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [
+      {
+        "name": "generator-jhipster-nuvem-java",
+        "version": "6.10.4"
+      }
+    ],
+    "enableTranslation": false,
+    "clientPackageManager": "npm",
+    "blueprints": [
+      {
+        "name": "generator-jhipster-nuvem-java",
+        "version": "6.10.4"
+      }
+    ],
+    "skipClient": true,
+    "skipUserManagement": true
+  }
+}

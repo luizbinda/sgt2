@@ -1,0 +1,25 @@
+version: '2'
+services:
+  sgtservice-registry:
+    extends:
+      file: jhipster-registry.yml
+      service: jhipster-registry
+    container_name: sgtservice-jhipster-registry
+
+  sgtservice-postgresql:
+    extends:
+      file: postgresql.yml
+      service: sgtservice-postgresql
+    container_name: sgtservice-postgresql
+
+  sgtservice-redis:
+    extends:
+      file: redis.yml
+      service: redis
+    container_name: sgtservice-redis
+
+  sgtservice-elasticsearch:
+    extends:
+      file: elasticsearch.yml
+      service: sgtservice-elasticsearch
+    container_name: sgtservice-elasticsearch

@@ -1,0 +1,50 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "br.gov.sgtmail"
+    },
+    "jhipsterVersion": "6.9.1",
+    "applicationType": "microservice",
+    "baseName": "sgtmail",
+    "packageName": "br.gov.sgtmail",
+    "packageFolder": "br/gov/sgtmail",
+    "serverPort": "8083",
+    "authenticationType": "jwt",
+    "cacheProvider": "hazelcast",
+    "enableHibernateCache": false,
+    "websocket": false,
+    "databaseType": "no",
+    "devDatabaseType": "no",
+    "prodDatabaseType": "no",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": "eureka",
+    "buildTool": "maven",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "NWJiNDY5NzAwNzAwNjE3ZjA3ZWVjYjU2NTk2MWFmZWMyMWViYzk1NzYzYmE5NGYyZjZjZDcwOTYwZmIyYjdiYWZhYzI4YTlhZTM5MzgxMDVmMjBlMzFmM2E3ZDA4MTFmYzY2YmRiOWM4OTUzOWYxNzAzNzJhOGNkODYzMzVjNjM=",
+    "embeddableLaunchScript": false,
+    "userDetailsResource": false,
+    "microserviceStackType": "SpringCloud",
+    "creationTimestamp": 1636422103135,
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [
+      {
+        "name": "generator-jhipster-nuvem-java",
+        "version": "6.10.4"
+      }
+    ],
+    "enableTranslation": false,
+    "clientPackageManager": "npm",
+    "blueprints": [
+      {
+        "name": "generator-jhipster-nuvem-java",
+        "version": "6.10.4"
+      }
+    ],
+    "skipClient": true,
+    "skipUserManagement": true
+  }
+}
