@@ -23,3 +23,9 @@ services:
       file: elasticsearch.yml
       service: sgtservice-elasticsearch
     container_name: sgtservice-elasticsearch
+
+  sgtservice-rabbitmq:
+    extends:
+      file: rabbitmq.yml
+      service: sgtservice-rabbitmq
+    container_name: sgtservice-rabbitmq
