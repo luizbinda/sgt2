@@ -23,7 +23,7 @@ public class AnexoService {
 
   private final AnexoRepository anexoRepository;
   private final AnexoMapper anexoMapper;
-  private final AnexoClient anexoClient;
+//  private final AnexoClient anexoClient;
   private final ApplicationEventPublisher applicationEventPublisher;
 
   public List<AnexoDTO> index() {
@@ -34,13 +34,14 @@ public class AnexoService {
     Anexo anexo = anexoRepository.findById(id).orElseThrow(
             () -> new RegraNegocioException(ConstantsUtils.ANEXO_NOT_FOUND)
     );
-    return anexoClient.getAnexo(anexo.getHash());
+    return null;
+//    return anexoClient.getAnexo(anexo.getHash());
   }
 
   public AnexoDTO save(AnexoDTO anexoDTO) {
     anexoDTO.setHash(UUID.randomUUID().toString());
     Anexo anexo = anexoMapper.toEntity(anexoDTO);
-    anexoClient.uploadAnexo(anexoDTO);
+//    anexoClient.uploadAnexo(anexoDTO);
     anexoRepository.save(anexo);
     applicationEventPublisher.publishEvent(new AnexoEvent(anexo.getId()));
     return anexoMapper.toDTO(anexo);
@@ -50,7 +51,7 @@ public class AnexoService {
     Anexo anexo = anexoRepository.findById(id).orElseThrow(
             () -> new RegraNegocioException(ConstantsUtils.ANEXO_NOT_FOUND)
     );
-    anexoClient.deleteAnexo(anexo.getHash());
+//    anexoClient.deleteAnexo(anexo.getHash());
     anexoRepository.delete(anexo);
   }
 

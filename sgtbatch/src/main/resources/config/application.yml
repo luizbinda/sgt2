@@ -107,6 +107,17 @@ management:
 spring:
   application:
     name: sgtbatch
+  cloud:
+    stream:
+      rabbit:
+        bindings:
+          teste:
+            producer:
+              requiredGroups: teste
+      bindings:
+        teste:
+          destination: messages
+          group: teste
   jmx:
     enabled: false
   messages:

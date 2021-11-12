@@ -6,7 +6,7 @@ services:
     #     - ~/volumes/jhipster/sgtservice/postgresql/:/var/lib/postgresql/data/
     environment:
       - POSTGRES_USER=sgtservice
-      - POSTGRES_PASSWORD=
+      - POSTGRES_PASSWORD=sgtservice
       - POSTGRES_HOST_AUTH_METHOD=trust
     ports:
       - 5432:5432
