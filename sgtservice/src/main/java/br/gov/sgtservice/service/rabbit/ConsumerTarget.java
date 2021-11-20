@@ -5,9 +5,9 @@ import org.springframework.messaging.SubscribableChannel;
 
 public interface ConsumerTarget {
 
-    String BINDING_TESTE = "teste";
+    String BINDING_TESTE = "consumer-teste";
 
     @Input(ConsumerTarget.BINDING_TESTE)
-    SubscribableChannel teste();
+    SubscribableChannel testeFila();
 
 }

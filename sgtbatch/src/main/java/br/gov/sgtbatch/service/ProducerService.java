@@ -24,5 +24,4 @@ public class ProducerService {
         log.info("teste.... {}", message.getPayload());
         producerSource.testeMessage().send(message);
     }
-
 }

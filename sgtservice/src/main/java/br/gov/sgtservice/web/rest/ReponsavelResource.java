@@ -11,6 +11,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
@@ -28,7 +29,7 @@ public class ReponsavelResource {
   private final ResponsavelService responsavelService;
 
   @GetMapping("/search")
-  public ResponseEntity<Page<ResponsavelDTO>> index(ResponsavelFilter filter, Pageable pageable) {
+  public ResponseEntity<Page<ResponsavelDTO>> index(@ModelAttribute ResponsavelFilter filter, Pageable pageable) {
     return  new ResponseEntity<>(responsavelService.index(filter, pageable), HttpStatus.OK);
   }
 

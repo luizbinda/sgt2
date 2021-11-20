@@ -8,7 +8,7 @@ import lombok.Setter;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
-import java.time.LocalDate;
+
 
 @Getter
 @Setter
@@ -18,7 +18,7 @@ public class ResponsavelDTO implements Serializable {
   private Integer id;
 
   @NotNull(message = ConstantsUtils.RESPONSAVEL_DATE_NASCIMENTO_NOT_NULL)
-  private LocalDate dataNascimento;
+  private String dataNascimento;
 
   @NotNull(message = ConstantsUtils.RESPONSAVEL_NAME_NOT_NULL)
   private String nome;

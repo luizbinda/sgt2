@@ -109,15 +109,11 @@ spring:
     name: sgtbatch
   cloud:
     stream:
-      rabbit:
-        bindings:
-          teste:
-            producer:
-              requiredGroups: teste
       bindings:
-        teste:
-          destination: messages
-          group: teste
+        producer-teste: # producer name
+          destination: exchange1 # exchange name
+          group: fila1  # queue name
+          requiredGroups: fila1
   jmx:
     enabled: false
   messages:

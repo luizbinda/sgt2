@@ -1,6 +1,5 @@
 package br.gov.sgtservice.repository.search;
 
-
 import org.springframework.data.elasticsearch.repository.ElasticsearchRepository;
 import org.springframework.data.repository.NoRepositoryBean;
 

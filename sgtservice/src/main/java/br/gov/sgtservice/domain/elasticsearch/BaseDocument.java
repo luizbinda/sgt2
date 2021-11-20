@@ -20,6 +20,7 @@ import java.io.Serializable;
 public class BaseDocument implements Serializable {
 
   private static final String SORT = "sort";
+  protected static final String DATE_PATTERN = "dd/MM/yyyy";
 
   @MultiField(mainField = @Field(type = FieldType.Integer, store = true),
           otherFields = {@InnerField(suffix = SORT, type = FieldType.Integer, store = true)}

@@ -18,9 +18,7 @@ public class RabitTesteService {
 
     @StreamListener(target = ConsumerTarget.BINDING_TESTE)
     private void recalculate(@Payload String number) {
-
         log.info("Event update parameter received {}", number);
-
     }
 
 }

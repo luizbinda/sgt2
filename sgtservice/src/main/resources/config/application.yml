@@ -119,10 +119,10 @@ spring:
   cloud:
     stream:
       bindings:
-        teste:
-          destination: messages
-          group: teste
-          durableSubscription: true
+        consumer-teste: # consumer name
+          destination: exchange1 # exchange name
+          group: fila1  # queue name
+          durableSubscription: true  # impede de a filar morrer quando a aplicação parar
   jmx:
     enabled: false
   data:
